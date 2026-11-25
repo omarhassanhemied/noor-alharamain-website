@@ -172,6 +172,14 @@ footer{background:#030d19;color:#8da2b6;text-align:center;padding:28px 0;font-si
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18595343895"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','AW-18595343895');
+function nrWaConv(){gtag('event','conversion',{'send_to':'AW-18595343895/aP-7CKDTsb8dEJfc-aJF','value':1.0,'currency':'EGP'});}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');if(a)nrWaConv();},true);
+</script>
 </head>
 <body>
 
@@ -338,7 +346,7 @@ let d=false;sl.addEventListener('pointerdown',e=>{d=true;mv(e.clientX)});
 addEventListener('pointerup',()=>d=false);addEventListener('pointermove',e=>d&&mv(e.clientX));
 f.onsubmit=e=>{e.preventDefault();const v=new FormData(f);
  const t=encodeURIComponent(`السلام عليكم، أنا ${v.get('n')}\nالجوال: ${v.get('p')}\nالخدمة: ${v.get('s')}\nالمدينة: ${v.get('c')||'-'}`);
- open('https://wa.me/966546627151?text='+t,'_blank')};
+ nrWaConv();open('https://wa.me/966546627151?text='+t,'_blank')};
 </script>
 </body>
 </html>
